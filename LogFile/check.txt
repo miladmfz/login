@@ -1,2 +1,0 @@
-Kowsardb#1401-9-26#12:3:54 : 	"select top 10 GoodCode,GoodName,GoodExplain1 from good "
-Kowsardb#1401-9-26#12:3:57 : 	"select top 10 GoodCode,GoodName,GoodExplain1 from good "

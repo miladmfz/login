@@ -1,4 +1,0 @@
-Kowsardb#1401-9-24#17:53:11 : 	"Exec spApp_GetGoods2 @RowCount = 200,@Where = N'',@AppBasketInfoRef=239, @GroupCode = 14 ,@AppType=3"
-Kowsardb#1401-9-24#17:53:14 : 	"Exec spApp_GetGoods2 @RowCount = 200,@Where = N'',@AppBasketInfoRef=239, @GroupCode = 16 ,@AppType=3"
-Kowsardb#1401-9-24#17:53:15 : 	"Exec spApp_GetGoods2 @RowCount = 200,@Where = N'',@AppBasketInfoRef=239, @GroupCode = 14 ,@AppType=3"
-Kowsardb#1401-9-24#17:53:15 : 	"Exec spApp_GetGoods2 @RowCount = 200,@Where = N'GoodName Like N''%%'' ',@AppBasketInfoRef=239, @GroupCode = 14 ,@AppType=3"

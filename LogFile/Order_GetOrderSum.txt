@@ -1,3 +1,0 @@
-Kowsardb#1401-9-24#17:53:11 : 	"Exec spApp_OrderGetSummmary 239"
-Kowsardb#1401-9-24#17:53:11 : 	"Exec spApp_OrderGetSummmary 239"
-Kowsardb#1401-9-24#17:53:15 : 	"Exec spApp_OrderGetSummmary 239"

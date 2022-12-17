@@ -1,3 +1,0 @@
-Kowsardb#1401-9-24#17:53:11 : 	"Exec [dbo].[spApp_GetGoodGroups] @GroupName = N'', @GroupCode = 14"
-Kowsardb#1401-9-24#17:53:14 : 	"Exec [dbo].[spApp_GetGoodGroups] @GroupName = N'', @GroupCode = 16"
-Kowsardb#1401-9-24#17:53:15 : 	"Exec [dbo].[spApp_GetGoodGroups] @GroupName = N'', @GroupCode = 14"
