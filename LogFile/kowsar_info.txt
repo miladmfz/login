@@ -1,0 +1,2 @@
+Kowsardb#1401-9-24#17:53:20 : 	"select top 1 DataValue from dbsetup where KeyValue = 'AppOrder_DefaultGroupCode'"
+Kowsardb#1401-9-24#17:53:26 : 	"select top 1 DataValue from dbsetup where KeyValue = 'AppOrder_DefaultGroupCode'"

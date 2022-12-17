@@ -1,0 +1,4 @@
+Kowsardb#1401-9-24#17:53:10 : 	"select dbo.fnDate_Today() TodeyFromServer"
+Kowsardb#1401-9-24#17:53:10 : 	"select dbo.fnDate_Today() TodeyFromServer"
+Kowsardb#1401-9-24#17:53:10 : 	"select dbo.fnDate_Today() TodeyFromServer"
+Kowsardb#1401-9-24#17:53:12 : 	"select dbo.fnDate_Today() TodeyFromServer"
