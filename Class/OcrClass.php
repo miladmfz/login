@@ -71,13 +71,15 @@
 	}
 	
 
+
 	public function OcrControlled(){
 		
 
 		if (isset($_REQUEST['AppOCRCode'])){ $AppOCRCode = $_REQUEST['AppOCRCode'];} else {$AppOCRCode = "";};
 		if (isset($_REQUEST['State'])){ $State = $_REQUEST['State'];} else {$State = "0";};
+		if (isset($_REQUEST['JobPersonRef'])){ $JobPersonRef = $_REQUEST['JobPersonRef'];} else {$JobPersonRef = "0";};
 		
-		$sq = "Exec dbo.spApp_ocrSetControlled $AppOCRCode ,$State ";
+		$sq = "Exec dbo.spApp_ocrSetControlled $AppOCRCode ,$State ,$JobPersonRef";
 
 		MainClass::LogFile("OcrControlled",$sq);
 		$this->response = database::custom_sqlSRV($sq,true);
@@ -339,6 +341,7 @@
 
 	}
 	
+	
 
 	public function SetPackDetail(){
 		
@@ -349,8 +352,9 @@
 		if (isset($_REQUEST['Packer'])){ $Packer = $_REQUEST['Packer'];} else {$Packer = " ";};
 		if (isset($_REQUEST['PackDeliverDate'])){ $PackDeliverDate = $_REQUEST['PackDeliverDate'];} else {$PackDeliverDate = " ";};
 		if (isset($_REQUEST['PackCount'])){ $PackCount = $_REQUEST['PackCount'];} else {$PackCount = "1";};
+		if (isset($_REQUEST['AppDeliverDate'])){ $AppDeliverDate = $_REQUEST['AppDeliverDate'];} else {$AppDeliverDate = "";};
 
-		$sq = "Exec dbo.spApp_ocrSetPackDetail $OcrFactorCode,'".$Reader."','".$Controler."','".$Packer."','".$PackDeliverDate."',".$PackCount;
+		$sq = "Exec dbo.spApp_ocrSetPackDetail $OcrFactorCode,'".$Reader."','".$Controler."','$Packer - $AppDeliverDate','".$PackDeliverDate."',".$PackCount;
 
 		MainClass::LogFile("SetPackDetail",$sq);
 		$this->response = database::custom_sqlSRV($sq,true);

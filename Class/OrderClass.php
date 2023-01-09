@@ -3,6 +3,7 @@
  require __DIR__ . '/../print/vendor/autoload.php';
  use Mike42\Escpos\Printer;
  use Mike42\Escpos\PrintConnectors\WindowsPrintConnector;
+ use Mike42\Escpos\PrintConnectors\FilePrintConnector;
  use Mike42\Escpos\EscposImage;
  class OrderClass
 {
@@ -305,7 +306,9 @@
 		try {
 
 			$tux = EscposImage::load(__DIR__ . "/../FactorImage/$Code.jpg", false);
-			$connector = new WindowsPrintConnector($PrinterName);
+			//$connector = new WindowsPrintConnector($PrinterName);
+			//$connector = new FilePrintConnector("//192.168.1.33/asd");
+			$connector = new FilePrintConnector("$PrinterName");
 			$printer = new Printer($connector);
 			$printer -> setJustification( Printer::JUSTIFY_CENTER );
 
@@ -317,7 +320,7 @@
 
 			$printer -> close();
 			 $filename=__DIR__ . "/../FactorImage/$Code.jpg";
-			 unlink($filename);
+			 //unlink($filename);
 			 echo "{\"Text\":\"Done\"}";
 		} catch (Exception $e) {
 			echo "Couldn't print to this printer: " . $e -> getMessage() . "\n";
