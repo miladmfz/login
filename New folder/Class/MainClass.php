@@ -61,14 +61,6 @@
 	
 
 
-	public function checktest(){
-		$sq = "select top 10 GoodCode,GoodName,GoodExplain1 from good ";
-		MainClass::LogFile("check",$sq);
-		$this->response = database::custom_sqlSRV($sq,true);
-		$Last =  json_encode($this->response, JSON_UNESCAPED_UNICODE);
-		echo $Last;
-	}
-
 
 	public function check(){
 		$sq = "select top 10 GoodCode,GoodName,GoodExplain1 from good ";

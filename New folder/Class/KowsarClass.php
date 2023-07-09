@@ -12,8 +12,7 @@
     {
         $Res = array();
 
-       // $sq = "Select Top 10 * from good order by 1 desc";
-	   $sq = "Select * from good order by 1 desc";
+        $sq = "Select Top 10 * from good order by 1 desc";
 		$result = database::custom_sqlSRV($sq,true);
         if ($result) {
             foreach ($result as $key => $value) {

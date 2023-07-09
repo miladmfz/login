@@ -102,7 +102,7 @@ class Printer
      * Indicates CODE93 barcode when used with Printer::barcode
      */
     const BARCODE_CODE93 = 72;
-
+    const RS = "\x07\x1e\x07";
     /**
      * Indicates CODE128 barcode when used with Printer::barcode
      */
@@ -610,6 +610,7 @@ class Printer
      */
     public function graphics(EscposImage $img, int $size = Printer::IMG_DEFAULT)
     {
+        
         self::validateInteger($size, 0, 3, __FUNCTION__);
         $rasterData = $img -> toRasterFormat();
         $imgHeader = Printer::dataHeader([$img -> getWidth(), $img -> getHeight()], true);
@@ -618,6 +619,7 @@ class Printer
         $xm = (($size & self::IMG_DOUBLE_WIDTH) == Printer::IMG_DOUBLE_WIDTH) ? chr(2) : chr(1);
         $ym = (($size & self::IMG_DOUBLE_HEIGHT) == Printer::IMG_DOUBLE_HEIGHT) ? chr(2) : chr(1);
         $header = $tone . $xm . $ym . $colors . $imgHeader;
+
         $this -> wrapperSendGraphicsData('0', 'p', $header . $rasterData);
         $this -> wrapperSendGraphicsData('0', '2');
     }

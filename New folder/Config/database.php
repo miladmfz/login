@@ -12,15 +12,15 @@ define('sql_servername', '192.168.1.18\sql2017');
 */
 
 
-define('sql_servername', '192.168.1.219\sql2019');
-define('sql_dbname', 'KowsarDb');
+define('sql_servername', '192.168.1.219\sql2017');
+define('sql_dbname', 'NewKowsarDb');
 define('sql_user', 'sa');
-define('sql_pass', '1');
+define('sql_pass', 'Kowsar321@!');
 
 
-define('img_servername', '192.168.1.219\sql2019');
+define('img_servername', '192.168.1.219\sql2017');
 define('img_dbname', 'kowsarimage');
 define('img_user', 'sa');
-define('img_pass', '1');
+define('img_pass', 'Kowsar321@!');
 
 
